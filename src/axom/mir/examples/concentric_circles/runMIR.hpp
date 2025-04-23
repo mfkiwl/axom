@@ -12,7 +12,7 @@
 template <typename ExecSpace>
 int runMIR(const conduit::Node &hostMesh, const conduit::Node &options, conduit::Node &hostResult)
 {
-  AXOM_ANNOTATE_BEGIN("runMIR");
+  AXOM_ANNOTATE_SCOPE("runMIR");
 
   namespace bputils = axom::mir::utilities::blueprint;
   using namespace axom::mir::views;
